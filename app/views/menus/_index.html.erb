@@ -1,0 +1,24 @@
+<table class='table table-hover table-inverse'>
+  <thead>
+    <tr>
+      <th></th>
+      <th>料理名</th>
+      <th>一言</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% menus.each do |menu| %>
+      <tr>
+        <td><%= link_to(menu.user) do %>
+          <%= image_tag menu.image, size:'60x60' %>
+          <% end %>
+        </td>
+        <td><%= link_to menu.title,menu, class: "menu_#{menu.id}" %></td>
+        <td><%= menu.body %></td>
+        <td>コメント数: <%= menu.menu_comments.count %></td>
+        <td><%= render "favorites/btn", menu: menu %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

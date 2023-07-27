@@ -1,1 +1,12 @@
-@use "~bootstrap/scss/bootstrap"; 
+@use "~bootstrap/scss/bootstrap";
+
+// body {
+  // background-color: #EEEEEE;
+// }
+
+body {
+  background-image: url(/images/forest.jpg);
+  background-size: cover;
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+}
