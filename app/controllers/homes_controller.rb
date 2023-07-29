@@ -1,6 +1,7 @@
 class HomesController < ApplicationController
   def top
-    @menus = Menu.limit(4)
+    @menu = Menu.order(created_at: :desc)
+    @menus = @menu.limit(4)
   end
 
   def about

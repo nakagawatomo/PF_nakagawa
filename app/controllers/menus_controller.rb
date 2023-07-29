@@ -8,7 +8,7 @@ class MenusController < ApplicationController
   end
 
   def index
-    @menus = Menu.all
+    @menus = Menu.all.order(created_at: :desc)
     @menu = Menu.new
   end
 
