@@ -1,24 +1,18 @@
-# README
+# 今日のご飯
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
 
-Things you may want to cover:
+サイトテーマ
+*  その日の献立メニューを考える際に利用できる、SNSコミュニティサイト
 
-* Ruby version
+テーマを選んだ理由
+*  料理レシピはネット検索サイトが充実しているので直ぐに解決するが、 毎日ご飯を作っている人にとって、「献立を考える」事が一番の悩みなのではないかと考え、このテーマにしました。
 
-* System dependencies
+ターゲットユーザ
+*  毎日家事をしていて、献立を考えている人
+*  料理のレパートリーを増やしたいと考えている人
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+主な利用シーン
+*  スーパー等で商品を購入する時
+*  他の人が昨日どんな料理を作ったか知りたい時
+*  自分の作った料理を投稿する時
