@@ -11,7 +11,11 @@
   		<table class='table'>
   		  <tr>
           <td><%= link_to(@menu.user) do %>
-            <%= image_tag @menu.image, size:"100x100" %><br>
+          <% if @menu.image.attached? %>
+              <%= image_tag @menu.image, size:"100x100" %><br>
+          　<% else %>
+              <%= image_tag 'no_image', size:"100x100" %><br>
+            <% end %>
             <%= @menu.user.name %>
             <% end %>
           </td>
