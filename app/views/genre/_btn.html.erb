@@ -1,0 +1,11 @@
+<% if menu.favorited_by?(current_user) %>
+  <%= link_to menu_favorites_path(menu), method: :delete do %>
+    <i class="fas fa-heart" aria-hidden="true" style="color: red;"></i>
+    <%= menu.favorites.count %> いいね
+  <% end %>
+<% else %>
+  <%= link_to menu_favorites_path(menu), method: :post do %>
+    <i class="fas fa-heart" aria-hidden="true"></i>
+    <%= menu.favorites.count %> いいね
+  <% end %>
+<% end %>
