@@ -1,7 +1,6 @@
 class SearchesController < ApplicationController
   before_action :authenticate_user!
 
-
 	def search
 		@model = params[:model]
 		@content = params[:content]
@@ -12,5 +11,4 @@ class SearchesController < ApplicationController
 			@records = Menu.search_for(@content, @method)
 		end
 	end
-
 end
